@@ -1,0 +1,76 @@
+.bodyContent {
+    height: 100%;
+  }
+  #parentDiv {
+    height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .headC {
+    position: sticky;
+    top: 0;
+  
+    & h1{
+       background-color: #1a60c6;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    color: #e4dcdc;
+    text-align: center;
+    cursor: pointer;
+    }
+    
+  }
+  
+  .menu {
+    width: inherit;
+    position: fixed;
+    top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & div{
+      width: 80%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+    }
+  
+    & div:hover{
+     
+      background-color: cadetblue;
+    color: pink;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+    }
+  }
+  
+  
+  
+  .astyle {
+    background-color: white;
+    color: #1a60c6;
+    border: 2px solid #1a60c6;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .aactive {
+    background-color: #1a60c6;
+    color: white;
+  
+  }
+  
+  .content {
+    margin: 0;
+    padding: 23px 0;
+  }
+  
+  
+  
+  .section {
+    min-height: 500px;
+    padding: 23px;
+  }

@@ -1,0 +1,31 @@
+.headC {
+    position: sticky;
+    top: 0;
+  
+    & h1{
+      background-color: #1a60c6;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      color: #e4dcdc;
+      text-align: center;
+      cursor: pointer;
+      }
+    & p {
+      cursor: pointer;
+    }
+  }
+
+.ntc{
+  max-width: 95%;  
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h2{
+    text-align: center;
+  }
+}

@@ -1,1 +1,37 @@
-<p>thanks works!</p>
+<div class="headC">
+    <h1>
+        <mat-icon (click)="goBack()" aria-hidden="false"  aria-label="Example home icon" fontIcon="home" style="float: left;"></mat-icon>
+   
+        <p class="m-0" (click)="goToSpyscroll()">Scrollspy App</p>
+    </h1>
+</div>
+<div class="ntc">
+    <h2 style="white-space:pre-wrap">{{content}}</h2>
+
+    <mat-card >   
+        <mat-card-content>
+            <p>Angular version:</p>
+            <mat-chip-list class="mb-2" aria-label="Dep" style="display:flex; justify-content: center">
+                <mat-chip>Angular 14</mat-chip>  
+            </mat-chip-list>    
+
+            <p>Libraries: </p>
+            <mat-chip-list class="mb-2" aria-label="Dep" style="display:flex; justify-content: center">
+                <mat-chip color="warn">Angular Material 14</mat-chip>
+                <mat-chip color="primary" selected>Bootstrap 5.2.0</mat-chip>
+                <mat-chip color="accent" selected>Rxjs 7.5.0</mat-chip>
+            </mat-chip-list>
+            
+            <p>Angular features: </p>
+            <mat-chip-list aria-label="Dep" style="display:flex; justify-content: center">
+                <mat-chip color="warn">Routing</mat-chip>
+                <mat-chip color="primary" selected>@ViewChild()</mat-chip>
+                <mat-chip color="accent" selected>@Output()</mat-chip>
+                <mat-chip>String interpolation</mat-chip>
+            </mat-chip-list>   
+
+        </mat-card-content>
+        
+    </mat-card> 
+    <button mat-raised-button color="primary" class="mt-4" (click)="goBack()">Go back <mat-icon>home</mat-icon></button>
+</div>
