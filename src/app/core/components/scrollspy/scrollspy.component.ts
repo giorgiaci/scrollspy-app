@@ -1,6 +1,4 @@
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-scrollspy',
@@ -8,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./scrollspy.component.scss']
 })
 export class ScrollspyComponent {
-  constructor( private cd: ChangeDetectorRef, private router:Router){ }
+  constructor( private cd: ChangeDetectorRef){ }
 
   @ViewChild('sectionContainer') sectionContainer: any; 
   currentSection: any;
@@ -27,8 +25,4 @@ export class ScrollspyComponent {
     this.currentSection = this.sectionContainer.nativeElement.children[0].id
     this.cd.detectChanges()
   }
- goBack(){
-  this.router.navigate(['../'])
- }
-
 }

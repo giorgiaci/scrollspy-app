@@ -5,31 +5,8 @@
     height: 500px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-  }
-  
-  .headC {
-    position: sticky;
-    top: 0;
-  
-    & h1{
-       background-color: #1a60c6;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    color: #e4dcdc;
-    text-align: center;
-    cursor: default;
-    }& p {
-
-    display: inline-block;
-      cursor: pointer;
-    }
-    & mat-icon{
-      cursor: pointer;
-    }
-    
-  }
-  
+  }  
+ 
   .menu {
     width: inherit;
     position: fixed;

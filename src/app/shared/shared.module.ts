@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { MaterialModule } from './materal/material.module';
 import { ScrollSpyDirective } from './directives/scrollspy.directive';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [    
     HomePageComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    NavBarComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { ScrollSpyDirective } from './directives/scrollspy.directive';
   ],
   exports:[
     MaterialModule,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    NavBarComponent
   ],
 })
 export class SharedModule { }
