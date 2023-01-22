@@ -18,7 +18,14 @@
     margin: 0;
     color: #e4dcdc;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
+    }& p {
+
+    display: inline-block;
+      cursor: pointer;
+    }
+    & mat-icon{
+      cursor: pointer;
     }
     
   }

@@ -16,13 +16,13 @@ export class HomePageComponent {
     this.showProgressBar = true;
     setTimeout(()=>{
       this.router.navigate([RoutesEnums.CORE_PAGE, RoutesEnums.SCROLL_PAGE_SECTION], { relativeTo: this.activatedRoute.parent })
-    }, 1200)
+    }, 1000)
     
   }
   goToSorryPage(){
     this.showProgressBar = true;
     setTimeout(()=>{
       this.router.navigate([RoutesEnums.CORE_PAGE, RoutesEnums.THANKS_COMPONENT], { relativeTo: this.activatedRoute.parent })
-    }, 1200)    
+    }, 1000)    
   }
 }
