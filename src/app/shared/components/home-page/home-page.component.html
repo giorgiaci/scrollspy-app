@@ -1,0 +1,20 @@
+<mat-card class="example-card">
+    <mat-card-subtitle>Scrollspy App</mat-card-subtitle>
+    <mat-card-title>Hi, Foster and Partners</mat-card-title>
+    <mat-card-content>
+      <p>I'm <b>Giorgia</b></p> 
+      <img mat-card-image src="https://www.clipartmax.com/png/full/290-2906168_wonder-woman-chibi-download-wonder-woman-icon-png.png" [alt]="'wonderwomanpic'" style="display: block; width: 90px;   margin: 0 auto;">
+      <br>
+      <p>Angular version: <b>Angular 14</b>
+      <p>Libs: <b>Angular material 14 - Bootstrap 5</b></p>  
+      <p> For this app I used a customized angular directive to realize a scrollspy container.</p>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+      <button mat-button (click)="this.goToSpyScroll()">LET'S GO!</button>
+      <button mat-button (click)="this.goToSorryPage()">THANKS</button>
+    </mat-card-actions>
+    <mat-card-footer *ngIf="showProgressBar">
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
